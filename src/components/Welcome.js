@@ -27,7 +27,6 @@ const Welcome = (props) => {
         } else {
             props.showAlert("Invalid Credentials", "warning")
         }
-
     }
 
     const onInputChange = (e) => {
@@ -40,6 +39,7 @@ const Welcome = (props) => {
                     <img src={icon} height={300} width={300} alt="Scribble-Icon" />
                     <h1><b>Scribble</b></h1>
                     <h3><b>A Secure Notebook on the Cloud</b></h3>
+                    <h6><b>Remember everything and tackle any task with your notes kept all in one place.</b></h6>
                 </div>
                 <div id='welcome-center'></div>
                 <div id='welcome-right' >
@@ -62,7 +62,7 @@ const Welcome = (props) => {
                                     <label className="form-check-label" htmlFor="rememberMeSwitch">Remember Me</label>
                                 </div>
                             </div>
-                            <div className='text-end'>
+                            <div className='text-end' >
                                 <button type="submit" className="btn btn-primary" >Sign In</button>
                             </div>
                         </div>

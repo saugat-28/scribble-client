@@ -47,6 +47,7 @@ const SignUp = (props) => {
                     <img src={icon} height={300} width={300} alt="Scribble-Icon" />
                     <h1><b>Scribble</b></h1>
                     <h3><b>A Secure Notebook on the Cloud</b></h3>
+                    <h6><b>Remember everything and tackle any task with your notes kept all in one place.</b></h6>
                 </div>
                 <div id='welcome-center'></div>
                 <div id='welcome-right' >

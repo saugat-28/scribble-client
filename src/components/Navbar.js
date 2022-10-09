@@ -6,7 +6,7 @@ const Navbar = () => {
     const navigate = useNavigate()
     const logout = () => {
         localStorage.removeItem('token')
-        navigate("/login")
+        navigate("/")
     }
     return (
         <div>
@@ -26,10 +26,7 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        {!localStorage.getItem('token')?<form className="d-flex" >
-                            <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
-                            <Link className="btn btn-primary mx-1" to="/signup" role="button">Sign Up</Link>
-                        </form>:<button className='btn btn-primary' onClick={logout}>Logout</button>}
+                        {localStorage.getItem('token') && <button className='btn btn-primary' onClick={logout}>Logout</button>}
                     
                     </div>
                 </div>

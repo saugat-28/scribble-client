@@ -19,7 +19,6 @@ const Welcome = (props) => {
             body: JSON.stringify({ email: credentials.email, password: credentials.password })
         })
         const json = await response.json();
-        console.log(json)
         if (json.success) {
             // Save the auth token and redirect
             localStorage.setItem('token', json.authToken)
@@ -56,11 +55,11 @@ const Welcome = (props) => {
                             <label htmlFor="userPassword" className="form-label">Password</label>
                             <input type="password" className="form-control" id="userPassword" name="password" value={credentials.password} onChange={onInputChange} />
                         </div>
-                        <div >
+                        <div>
                             <div className='text-start'>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                                    <label class="form-check-label" for="flexSwitchCheckDefault">Remember Me</label>
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input" type="checkbox" role="switch" id="rememberMeSwitch" />
+                                    <label className="form-check-label" htmlFor="rememberMeSwitch">Remember Me</label>
                                 </div>
                             </div>
                             <div className='text-end'>
@@ -69,7 +68,7 @@ const Welcome = (props) => {
                         </div>
                     </form>
                     <div className='text-center mt-3'>
-                        <Link to="/signup">Don't have an account? Sign Up here!</Link>
+                        <Link to="/signup"><b>Don't have an account? Sign Up Now!</b></Link>
                     </div>
                 </div>
             </div>

@@ -18,3 +18,22 @@
 .flex {
   display: inline-flex;
 }
+
+#about-image{
+  height: 50px;
+  width: 50px;
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.about-content > p{
+  margin-left: 25px;
+}

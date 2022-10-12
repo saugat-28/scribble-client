@@ -22,6 +22,13 @@ const Welcome = (props) => {
         if (json.success) {
             // Save the auth token and redirect
             localStorage.setItem('token', json.authToken)
+            if (document.getElementById("rememberMeSwitch").checked) {
+                localStorage.setItem('remember', true);
+                console.log("Remembered")
+            } else {
+                localStorage.setItem('remember', false);
+                console.log("Not Remembered")
+            }
             navigate("/home")
             props.showAlert("Logged in Successfuly!", "success")
         } else {

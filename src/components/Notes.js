@@ -56,12 +56,12 @@ const Notes = (props) => {
                                     <input type="text" className="form-control" id="etitle" name='etitle' value={note.etitle} aria-describedby="emailHelp" onChange={onTextChange}/>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="edescription" className="form-label">Description</label>
-                                    <input type="text" className="form-control" id="edescription" name='edescription' value={note.edescription} onChange={onTextChange}/>
-                                </div>
-                                <div className="mb-3">
                                     <label htmlFor="etag" className="form-label">Tag</label>
                                     <input type="text" className="form-control" id="etag" name='etag' value={note.etag} onChange={onTextChange} />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="edescription" className="form-label">Description</label>
+                                    <textarea rows={3} type="text" className="form-control" id="edescription" name='edescription' value={note.edescription} onChange={onTextChange}/>
                                 </div>
                             </form>
                         </div>

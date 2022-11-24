@@ -4,7 +4,7 @@ import icon from '../images/scribble-icon.png'
 
 const Welcome = (props) => {
 
-    const host = "http://localhost:5000"
+    const host = "https://scribble.herokuapp.com"
     const [credentials, setCredentials] = useState({ email: "", password: "" })
     let navigate = useNavigate()
 

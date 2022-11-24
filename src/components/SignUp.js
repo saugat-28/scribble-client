@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import icon from '../images/scribble-icon.png'
 
 const SignUp = (props) => {
-    const host = "http://localhost:5000"
+    const host = "https://scribble.herokuapp.com"
     const [user, setUser] = useState({ name: "", email: "", password: "", cpassword: "" })
     let navigate = useNavigate()
 

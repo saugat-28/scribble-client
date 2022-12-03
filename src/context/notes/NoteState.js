@@ -2,7 +2,7 @@ import { useState } from "react";
 import NoteContext from "./noteContext";
 
 const NoteState = (props) => {
-    const host = "https://scribble.herokuapp.com"
+    const host = "https://scribble-kxoi.onrender.com"
     const notesInitial = []
     const [notes, setNotes] = useState(notesInitial)
 

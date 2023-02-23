@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# About Scribble:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Website is Live on: 
+https://scribble-notes.netlify.app/
 
 ## Available Scripts
 
